@@ -4,10 +4,6 @@ from urllib.request import urlretrieve
 from zipfile import ZipFile
 
 
-def convert_to_camel_case(string: str) -> str:
-    return string.title().replace("-", "").replace("_", "")
-
-
 def download(url: str) -> None:
     content, _ = urlretrieve(url)
 
